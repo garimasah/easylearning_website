@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>easyadmission</display-name>
+  <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  	<servlet>
+        <servlet-name>b-tech-college-list</servlet-name>
+        <jsp-file>/b-tech-college-list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>b-tech-college-list</servlet-name>
+        <url-pattern>/courses/b-tech/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>m-tech-college-list</servlet-name>
+        <jsp-file>/m-tech-college-list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>m-tech-college-list</servlet-name>
+        <url-pattern>/courses/m-tech/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>college-details</servlet-name>
+        <jsp-file>/college-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>college-details</servlet-name>
+        <url-pattern>/college/*</url-pattern>
+    </servlet-mapping>
+<!--     <servlet> -->
+<!--         <servlet-name>all-college-list</servlet-name> -->
+<!--         <jsp-file>/all-college-list.jsp</jsp-file> -->
+<!--     </servlet> -->
+<!--     <servlet-mapping> -->
+<!--         <servlet-name>all-college-list</servlet-name> -->
+<!--         <url-pattern>/college</url-pattern> -->
+<!--     </servlet-mapping> -->
+    <servlet>
+        <servlet-name>all-college</servlet-name>
+        <jsp-file>/college-type.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>all-college</servlet-name>
+        <url-pattern>/courses</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>contact-us</servlet-name>
+	    <jsp-file>/contact-us.jsp</jsp-file>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>contact-us</servlet-name>
+	    <url-pattern>/contact-us</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+	    <servlet-name>privacy-policy</servlet-name>
+	    <jsp-file>/privacy-policy.jsp</jsp-file>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>privacy-policy</servlet-name>
+	    <url-pattern>/privacy-policy</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+	    <servlet-name>terms-and-conditions</servlet-name>
+	    <jsp-file>/terms-and-conditions.jsp</jsp-file>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>terms-and-conditions</servlet-name>
+	    <url-pattern>/terms-and-conditions</url-pattern>
+  	</servlet-mapping>
+</web-app>
